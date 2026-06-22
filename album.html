@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Álbum de Fotos</title>
+    <link rel="stylesheet" href="album.css" />
+  </head>
+  <body>
+    <header class="album-header">
+      <div class="header-inner">
+        <a href="historia.html" class="header-back">← Voltar</a>
+        <h1>Álbum</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="gallery-section">
+        <div class="gallery-grid" id="gallery"></div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">
+        
+      </button>
+      <div class="lightbox-content">
+        <img id="lightboxImage" src="" alt="Foto ampliada" />
+      </div>
+    </div>
+
+    <script src="album.js"></script>
+    <div class="gallery-description">
+      Um conjunto de fotos fofas, bonitas ou muito engraçadas do melhor casal deste mundo.
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>By Mats</span>
+      </div>
+    </footer>
+  </body>
+</html>

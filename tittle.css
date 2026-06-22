@@ -1,0 +1,114 @@
+body {
+  background: #fff;
+  font-family: "Comfortaa", sans-serif;
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  max-width: 80px;
+  position: fixed;
+  top: 0;
+  right: 25px;
+}
+
+footer a {
+  text-decoration: none;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px dashed #fff;
+  color: #fff;
+  margin: 5px;
+}
+
+footer a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+footer a .icons {
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-content {
+  text-align: center;
+  text-transform: uppercase;
+  scroll-snap-type: y mandatory;
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.hover,
+.word,
+h1 {
+  cursor: pointer;
+}
+
+h1 {
+  position: relative;
+  color: #fff;
+  font-weight: 900;
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.concept {
+  position: relative;
+  padding: 5em;
+  height: 100vh;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+.concept:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.concept:hover:before {
+  opacity: 0.5;
+}
+
+.concept-four {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2em;
+  background: url("IMGs/back.jpg") no-repeat center center / cover;
+}
+
+.concept-four h1 {
+  display: inline-block;
+}
+
+.concept-four:hover h1 {
+  letter-spacing: 25px;
+  transform: scale(1.3);
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* make link look like plain heading */
+.concept-four a {
+  color: inherit;
+  text-decoration: none;
+}
